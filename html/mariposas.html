@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Animales Polinizadores</title>
+	<link rel="stylesheet" type="text/css" href="css/estilosanimales.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+    
+    
+    <style>
+        
+        iframe{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+                }
+        
+        
+            .accordion {
+              background-color: #F28C0F;
+              color: #444;
+              cursor: pointer;
+              padding: 18px;
+              width: 100%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 15px;
+              transition: 0.4s;
+            }
+
+            .active, .accordion:hover {
+              background-color: #F2A30F; 
+            }
+
+            .panel {
+              padding: 0 18px;
+              display: none;
+              background-color: #D2D9A0;
+              overflow: hidden;
+              text-align: justify;
+            }
+        
+        body {
+              font-family: Arial, Helvetica, sans-serif;
+          text-align: justify;
+            
+            }
+
+            .flip-box {
+              background-color: transparent;
+              width: 300px;
+              height: 200px;
+              border: 1px solid #f1f1f1;
+              perspective: 1000px;
+            }
+
+            .flip-box-inner {
+              position: relative;
+              width: 100%;
+              height: 100%;
+              text-align: center;
+              transition: transform 0.8s;
+              transform-style: preserve-3d;
+
+            }
+
+            .flip-box:hover .flip-box-inner {
+              transform: rotateX(180deg);
+          
+            }
+
+            .flip-box-front, .flip-box-back {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+                
+            }
+
+            .flip-box-front {
+              background-color: #F2A30F;
+              color: black;
+                
+            }
+
+            .flip-box-back {
+              background-color: #162D59;
+              color: white;
+              transform: rotateX(180deg);
+            }
+        
+            .fondo {
+                      background-image: url('imagenes/fondos.jpeg');
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: center;
+                    }
+       
+    </style>
+    
+</head>
+<body class="fondo">
+	<div class="cabeza">
+		<div class="container">
+			<div class="d-flex justify-content-between py-2 align-items-center">
+				
+                <div class="d-flex align-items-center">
+                  <a href="/">
+                    <img src="imagenes/logo.png" alt="Mi Logo" style="height: 80px;"> 
+                  </a>
+                  <p class="ms-3 mb-0"></p>
+                </div>
+				
+
+	 			<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+					 <div class="container-fluid">
+					    <button
+					      data-mdb-collapse-init
+					      class="navbar-toggler"
+					      type="button"
+					      data-mdb-target="#navbarRightAlignExample"
+					      aria-controls="navbarRightAlignExample"
+					      aria-expanded="false"
+					      aria-label="Toggle navigation">
+					      <i class="fas fa-bars"></i>
+					    </button>
+					   <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+					        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						        <li class="nav-item">
+						          <a class="nav-link" aria-current="page" href="Index.html">Home</a>
+						        </li>
+						        <li class="nav-item">
+						         <a class="nav-link" href="quees.html">¿Qué es?</a>
+						        </li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Animales Polinizadores
+									</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+										<a class="dropdown-item" href="abejas.html">Abejas</a>
+										<a class="dropdown-item" href="avispas.html">Avipas</a>
+                                        <a class="dropdown-item" href="moscas.html">Moscas</a>
+                                        <a class="dropdown-item" href="hormigas.html">Hormigas</a>
+                                        <a class="dropdown-item" href="Escarabajos.html">Escarabajos</a>
+                                        <a class="dropdown-item" href="mariposas.html">Mariposas</a>
+                                        <a class="dropdown-item" href="colibries.html">Colibríes</a>
+                                        <a class="dropdown-item" href="murcielagos.html">Murciélagos</a>
+									</div>
+                                    </li>
+                                    <li class="nav-item">
+						          <a class="nav-link" href="beneficios.html">Beneficios</a>
+						        </li>
+								  
+						        <li class="nav-item">
+						          <a class="nav-link" href="juegos.html">Juegos</a> 
+						        </li>
+					      	</ul>
+					    </div>
+					 </div>
+				</nav>
+
+ 			</div>
+		</div>
+	</div>
+
+		
+
+	<div class="cabeza-cuerpo">
+		<div class="container">
+			<div class="row">
+            	<div class="col">
+      				<div>
+      					<div class="text-center pt-5">			
+							<p><h2 class="animate__animated animate__rubberBand">Mariposas</h2><p/>
+                            
+                            <div class="col-center pt-5">
+      				          <img src="imagenes/mariposas.jpeg" alt="abejas" width="600px" class="animate__animated animate__fadeInUp img-fluid"><img/>
+                            </div>
+                            
+						</div>
+                      <p class="text-center pt-5"><b>De las 24,000 especies de mariposas  que se han descrito en el mundo, mil 800 polinizan en México magnolias, nenúfares, rosas y asclepias, mejor conocidas como algodoncillo, entre otras más. Estos insectos de atractivos colores y formas, ya sean diurnas o nocturnas, polinizan las flores de cálices profundos, tubulares, con sus órganos bucales en forma de tubo para succionar los nutrientes de las plantas a través de una larga lengua enrollada llamada espiritrompa. Insectos lepidópteros, las mariposas tienen seis patas, dos alas y un cuerpo dividido en tres partes: cabeza, tórax y abdomen, salvo en la Antártida, existen en todo el mundo.</b></p>
+
+                    <p>Sin embargo, las poblaciones de polinizadores vienen disminuyendo de manera preocupante al ser afectadas por:</p>
+                        
+                       <p> <ol>
+                    <li>La Pérdida de fragmentación de hábitats</li>
+                    <li>Uso de plaguicidas</li>
+                    <li>Canada</li>
+                    <li>Presencia de especies exóticas invasoras (plantas y abejas exóticas).</li>
+                    <li>El cambio climático.</li>
+                        </ol></p>
+                        
+                                                
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/u_y_NaVL-bk?si=ueLZRy0h0_AdjeWn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        
+                        
+                        
+                        
+            
+                        
+					</div>
+    			</div>
+            </div>
+        </div>       
+        
+        
+        <div class="container">
+            <div class="row"> 
+                <div class="col text-center pt-5">
+                    
+                    <h2 class="animate__animated animate__rubberBand">Mas información</h2>
+
+                  <button class="accordion"><h5>Flores de mariposa</h5></button>
+                    <div class="panel">
+                        <p>Las mariposas suelen visitar flores que son:</p>
+                      <ul>
+                      <li><p>En grupos y proporcionar plataformas de aterrizaje.</p></li>
+                                
+                      <li><p>De colores brillantes (rojo, amarillo, naranja).</p></li>
+                                
+                      <li><p>Abierto durante el día.</p></li>
+                                
+                      <li><p>Amplios productores de néctar, con néctar profundamente escondido</p></li>
+                                
+                      <li><p>Guías de néctar presentes</p></li>
+                                
+                      <li><p>Pueden ser racimos de pequeñas flores (varas de oro, espirea)</p></li>
+                      </ul>         
+                      <b> <p>Muchas mariposas producen aromas que atraen al sexo opuesto. Muchos de estos aromas suelen tener el mismo olor que las flores que les atraen y que visitan. El aroma de estas flores polinizadas por mariposas podría haber evolucionado como una adaptación que aprovechó el atractivo existente de estos aromas.</p></b>
+                    </div>
+
+                  <button class="accordion"><h5>Mariposas y algodoncillo</h5></button>
+                    <div class="panel">
+                        <p>Muchos insectos no pueden alimentarse de la savia de las asclepias. Las orugas de las mariposas de las asclepias (Danaidae), como la mariposa monarca, se alimentan de las hojas de las plantas de asclepia. El jugo lechoso de la planta, una vez ingerido, hace que las orugas y las mariposas adultas resulten desagradables para las aves y otros depredadores. Algunas mariposas, como la mariposa virrey, no se alimentan de asclepias, pero imitan el color y los patrones de las desagradables mariposas de las asclepias para utilizar esta estrategia de supervivencia.</p>
+
+                    </div>
+
+                <script>
+                    var acc = document.getElementsByClassName("accordion");
+                    var i;
+
+                    for (i = 0; i < acc.length; i++) {
+                      acc[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.display === "block") {
+                          panel.style.display = "none";
+                        } else {
+                          panel.style.display = "block";
+                        }
+                      });
+                    }
+                </script>
+
+                    
+                </div>
+            
+            </div>
+        
+        </div>
+        
+        
+        <div class="container">
+            <div class="row"> 
+                <div class="col text-center pt-5">
+                    
+                    <h2 class="animate__animated animate__rubberBand text-center pt-5">Datos Curiosos</h2>
+                    
+                    <div class="col text-center pt-5">
+                    
+                <div class="row row-cols-1 row-cols-md-3 g-4 mb-5 ml-5">
+                    <div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                          <h4 class="text-center pt-5">¡Sus alas son transparentes!</h4>
+                        </div>
+                        <div class="flip-box-back">
+                          <h4 class=" text-center pt-5">¡Alcanzan 48 Km/h volando!</h4>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                          <h4 class="text-center pt-5"> Les gusta el calor</h4>
+                        </div>
+                        <div class="flip-box-back">
+                          <h4 class="text-center pt-5">Su vista es ultravioleta</h4>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                          <h4 class="text-center pt-5">Los receptores gustativos están en sus patas</h4>
+                        </div>
+                        <div class="flip-box-back">
+                          <h4 class="text-center pt-5">Usan sus alas como camuflaje</h4>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                    
+                </div>
+            
+            </div>
+        
+        </div>
+        
+        
+        
+				<div class="text-center pt-5"></div>
+
+	</div>
+	
+	<div class="pie">
+		<div class="container">
+			<div class="d-flex justify-content-between">
+ 				<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+  
+  				<section class="">
+    					<div class="container text-center text-md-start mt-5">
+      						<div class="row mt-3">
+                                
+	        					<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                      <img src="imagenes/logo.png" alt="Logo" style="height: 80px; margin-right: 10px;">
+                                      <h6 class="text-uppercase fw-bold mb-0">ANIMALES POLINIZADORES</h6>
+                                    </div> 
+                                  </div>
+
+	        					<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+							          <h6 class="text-uppercase fw-bold mb-4">
+							           
+							          </h6>
+							          <p>
+							            <a href="#!" class="text-reset">Avisos de Privacidad</a>
+							          </p>
+							         
+							          <p>
+							            <a href="#!" class="text-reset">Politicas de Privacidad</a>
+							          </p>
+	        					</div>
+
+						        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+						          <!-- Links -->
+						          <h6 class="text-uppercase fw-bold mb-4">
+						         
+						          </h6>
+						          <p>
+						            <a href="#!" class="text-reset">Contactanos</a>
+						          </p>
+						          <p>
+						            <a href="#!" class="text-reset">Configuraciones de Cookies</a>
+						          </p>
+						          
+						        </div>
+
+						        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+						          <!-- Links -->
+						          <h6 class="text-uppercase fw-bold mb-4"></h6>
+						          <p><i class="fas fa-home me-3"></i>Puebla</p>
+						          <p>
+						            <i class="fas fa-envelope me-3"></i>
+						            animalespolinizadores@gmail.com
+						          </p>
+						        </div>
+      						</div>
+ 
+    					</div>
+  					</section>
+ 
+	  					<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+						    © 2025 Copyright:
+						    <a class="text-reset fw-bold" href="#">AnimalesPolinizadores.com</a>
+	  					</div>
+				</footer>
+ 			</div>
+		</div>
+	</div>	
+
+		<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+ 
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="js/scrip.js"></script>
+</body>
+</html>

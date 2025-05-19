@@ -1,0 +1,60 @@
+
+p {
+	Color: black;
+}
+
+.cabeza{
+	background-color: #F28C0F;
+	
+}
+
+.cabeza-breadcrumb{
+	background-color: #e9ecef;
+}
+
+
+
+.container-cuerpo {
+  height: 500px;
+  position: relative;
+  border: 3px solid #dbe4ed; /* Border color is optional */ 
+}
+
+ .center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+}
+
+.pie{
+  background-color: #F28C0F;
+}
+
+
+#card .col-lg-4 {
+  margin: o !important;
+  padding: 25px;
+}
+
+
+.boton {
+  background-color:  #e9ecef;
+  color: black;
+  padding: 13px 20px;
+  text-decoration: none;
+}
+
+.boton:hover {
+  background-color: #153443;
+  color: white;
+  border: 1px white;
+}
+
+
+.boton{
+	border-radius: 10px;
+}

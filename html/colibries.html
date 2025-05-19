@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Animales Polinizadores</title>
+	<link rel="stylesheet" type="text/css" href="css/estilosanimales.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+    
+    
+    <style>
+        
+        iframe{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+                }
+        
+        
+            .accordion {
+              background-color: #F28C0F;
+              color: #444;
+              cursor: pointer;
+              padding: 18px;
+              width: 100%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 15px;
+              transition: 0.4s;
+            }
+
+            .active, .accordion:hover {
+              background-color: #F2A30F; 
+            }
+
+            .panel {
+              padding: 0 18px;
+              display: none;
+              background-color: #D2D9A0;
+              overflow: hidden;
+              text-align: justify;
+            }
+        
+        body {
+              font-family: Arial, Helvetica, sans-serif;
+          text-align: justify;
+            
+            }
+
+            .flip-box {
+              background-color: transparent;
+              width: 300px;
+              height: 200px;
+              border: 1px solid #f1f1f1;
+              perspective: 1000px;
+            }
+
+            .flip-box-inner {
+              position: relative;
+              width: 100%;
+              height: 100%;
+              text-align: center;
+              transition: transform 0.8s;
+              transform-style: preserve-3d;
+
+            }
+
+            .flip-box:hover .flip-box-inner {
+              transform: rotateX(180deg);
+          
+            }
+
+            .flip-box-front, .flip-box-back {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+                
+            }
+
+            .flip-box-front {
+              background-color: #F2A30F;
+              color: black;
+                
+            }
+
+            .flip-box-back {
+              background-color: #162D59;
+              color: white;
+              transform: rotateX(180deg);
+            }
+        
+            .fondo {
+                      background-image: url('imagenes/fondos.jpeg');
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: center;
+                    }
+       
+    </style>
+    
+</head>
+<body class="fondo">
+	<div class="cabeza">
+		<div class="container">
+			<div class="d-flex justify-content-between py-2 align-items-center">
+				
+                <div class="d-flex align-items-center">
+                  <a href="/">
+                    <img src="imagenes/logo.png" alt="Mi Logo" style="height: 80px;"> 
+                  </a>
+                  <p class="ms-3 mb-0"></p>
+                </div>
+				
+
+	 			<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+					 <div class="container-fluid">
+					    <button
+					      data-mdb-collapse-init
+					      class="navbar-toggler"
+					      type="button"
+					      data-mdb-target="#navbarRightAlignExample"
+					      aria-controls="navbarRightAlignExample"
+					      aria-expanded="false"
+					      aria-label="Toggle navigation">
+					      <i class="fas fa-bars"></i>
+					    </button>
+					   <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+					        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						        <li class="nav-item">
+						          <a class="nav-link" aria-current="page" href="Index.html">Home</a>
+						        </li>
+						        <li class="nav-item">
+						         <a class="nav-link" href="quees.html">¿Qué es?</a>
+						        </li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Animales Polinizadores
+									</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+										<a class="dropdown-item" href="abejas.html">Abejas</a>
+										<a class="dropdown-item" href="avispas.html">Avipas</a>
+                                        <a class="dropdown-item" href="moscas.html">Moscas</a>
+                                        <a class="dropdown-item" href="hormigas.html">Hormigas</a>
+                                        <a class="dropdown-item" href="Escarabajos.html">Escarabajos</a>
+                                        <a class="dropdown-item" href="mariposas.html">Mariposas</a>
+                                        <a class="dropdown-item" href="colibries.html">Colibríes</a>
+                                        <a class="dropdown-item" href="murcielagos.html">Murciélagos</a>
+									</div>
+                                    </li>
+                                    <li class="nav-item">
+						          <a class="nav-link" href="beneficios.html">Beneficios</a>
+						        </li>
+								  
+						        <li class="nav-item">
+						          <a class="nav-link" href="juegos.html">Juegos</a> 
+						        </li>
+					      	</ul>
+					    </div>
+					 </div>
+				</nav>
+
+ 			</div>
+		</div>
+	</div>
+
+		
+
+	<div class="cabeza-cuerpo">
+		<div class="container">
+			<div class="row">
+            	<div class="col">
+      				<div>
+      					<div class="text-center pt-5">			
+							<p><h2 class="animate__animated animate__rubberBand">Colibríes</h2><p/>
+                            
+                            <div class="col-center pt-5">
+      				          <img src="imagenes/Colibries.jpg" alt="abejas" width="600px" class="animate__animated animate__fadeInUp img-fluid"><img/>
+                            </div>
+                            
+						</div>
+                      <p class="text-center pt-5"><b>El verano está aquí, y una de sus ventajas es que atrae a muchos nuevos visitantes a nuestra región, entre los cuales están los colibríes. En el posteo de hoy hablaremos sobre estas hermosas aves, sobre por qué comen tanto y qué podemos hacer para asistirlas mientras nos visitan.</b>
+
+                    <p>Los colibríes son un grupo de aves que se especializan en alimentarse exclusivamente de néctar, aunque también complementan sus dietas con algunos insectos que pueden encontrar en las flores que visitan. Los colibríes están restringidos al continente americano, lo que significa que sólo se los puede encontrar en el hemisferio occidental. Debido a que visitan las flores, actúan como muy buenos polinizadores de muchas plantas, al punto de ser considerados el grupo más grande de vertebrados polinizadores</p>
+
+                    <p>Las especies de colibríes en los Estados Unidos son migratorias, viajando miles de millas entre sus «residencias» de verano y de invierno. Entre todas las especies de colibríes que están presentes en el país, al menos siete han sido observadas en Maryland. De estas siete, una no sólo visita sino que también se reproduce en nuestra región: el colibrí garganta rubí.</p>
+
+                                                
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/kOr3Mz9Cspw?si=HwIiLucAuls6jB55" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        
+                        
+                        
+                        
+            
+                        
+					</div>
+    			</div>
+            </div>
+        </div>       
+        
+        
+        <div class="container">
+            <div class="row"> 
+                <div class="col text-center pt-5">
+                    
+                    <h2 class="animate__animated animate__rubberBand">Mas información</h2>
+
+                  <button class="accordion"><h5>¿Qué comen los colibríes?</h5></button>
+                    <div class="panel">
+                        <p>Los colibríes se alimentan principalmente de néctar que recogen en las flores que visitan. El néctar que producen estas flores es relativamente diluido (alrededor de 25% de azúcar), lo cual es perfecto para los colibríes. De hecho, los colibríes colectan néctar mientras vuelan, lo que consume mucha energía. Este néctar diluido no es demasiado viscoso y por esa razón puede ser recogido rápidamente por los colibríes mientras vuelan, ayudándolos a ahorrar más energía.</p>
+
+                        <p>Y hablando de colectar néctar… es posible que se hayan dado cuenta de que los colibríes tienen picos muy largos. Lo que quizás no sepan es que sus picos y lenguas han evolucionado y están increíblemente adaptadas para hacer de la colección de néctar un proceso muy eficiente. Por ejemplo, un colibrí tiene un fuerte grupo de músculos que le permite realizar hasta 20 lamidas por segundo. Además, los bordes de sus picos se superponen parcialmente, lo que crea una estructura apretada desde la que el néctar puede no gotear cuando se está ingiriendo.</p>
+                    </div>
+
+                  <button class="accordion"><h5>¿Por qué los colibríes comen tanto?</h5></button>
+                    <div class="panel">
+                      <p><b>¿Conocen la historia de la oruga hambrienta?</b> ¡A veces me parece que la historia debería ser más bien sobre el colibrí hambriento! De hecho, los colibríes rompen récords ya que son los animales con la tasa metabólica más alta de todo el reino animal. A pesar de ser tan chiquito, ¡este pequeño animal utiliza alrededor de 100 veces más calorías por gramo de cuerpo que los elefantes! Por esta razón, los colibríes necesitan mucha energía para sobrevivir y siempre tienen hambre, necesitando consumir diariamente alrededor del equivalente de su peso corporal ¡imagínense cómo sería si nosotros necesitáramos comer tanto!</p>
+
+                    </div>
+                    
+                  <button class="accordion"><h5>¿Qué flores visitan los colibríes?</h5></button>
+                    <div class="panel">
+                      <p>Los colibríes tienen una visión excepcional, capaces de ver los mismos colores que nosotros, pero también el espectro ultravioleta (UV). Sin embargo, <b>los colibríes visitan principalmente flores rojas, rosadas y a veces blanquecinas.</b> ¿Por qué? ¿Hay algún signo especial en las flores rojas y que ellos prefieren? En realidad, su preferencia por ese color no es innata, y los colibríes aprenden a reconocer el color de flores que ofrecen el mejor néctar. Debido a que la mayoría de las flores rojas no son atractivas para otros polinizadores, éstas tienen la mayor cantidad de néctar disponible para los colibríes. Por esa razón, cuando se les da la opción, los colibríes tienden a elegir flores rojas o rosadas, no porque sean las únicas que pueden ver, sino porque son las más propensas a ofrecer más comida.</p>
+
+                    </div>
+
+                <script>
+                    var acc = document.getElementsByClassName("accordion");
+                    var i;
+
+                    for (i = 0; i < acc.length; i++) {
+                      acc[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.display === "block") {
+                          panel.style.display = "none";
+                        } else {
+                          panel.style.display = "block";
+                        }
+                      });
+                    }
+                </script>
+
+                    
+                </div>
+            
+            </div>
+        
+        </div>
+        
+        
+        <div class="container">
+            <div class="row"> 
+                <div class="col text-center pt-5">
+                    
+                    <h2 class="animate__animated animate__rubberBand text-center pt-5">Datos Curiosos</h2>
+                    
+                    <div class="col text-center pt-5">
+                    
+                <div class="row row-cols-1 row-cols-md-3 g-4 mb-5 ml-5">
+                    <div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                          <h4 class="text-center pt-5">El colibrí tiene un corazón enorme, que representa el 2.5% de su peso total.</h4>
+                        </div>
+                        <div class="flip-box-back">
+                          <h4 class=" text-center pt-5">¡Son muy inteligentes! Un colibrí tiene el cerebro más grande en relación con el tamaño de su cuerpo, en comparación con cualquier otro ave</h4>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                          <h4 class="text-center pt-5">El corazón de un colibrí puede latir hasta 1,200 veces por minuto.
+</h4>
+                        </div>
+                        <div class="flip-box-back">
+                          <h4 class="text-center pt-5">Pasan más de la mitad de su tiempo acicalándose, gorjeando (cantando) o descansando.</h4>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                          <h4 class="text-center pt-5">El colibrí gigante es el más grande de todos. Vive en Sudamérica y mide 8 centímetros.</h4>
+                        </div>
+                        <div class="flip-box-back">
+                          <h4 class="text-center pt-5">Sus alas se mueven alrededor de 60 veces por segundo.</h4>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                    
+                </div>
+            
+            </div>
+        
+        </div>
+        
+        
+        
+				<div class="text-center pt-5"></div>
+
+	</div>
+	
+	<div class="pie">
+		<div class="container">
+			<div class="d-flex justify-content-between">
+ 				<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+  
+  				<section class="">
+    					<div class="container text-center text-md-start mt-5">
+      						<div class="row mt-3">
+                                
+	        					<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                      <img src="imagenes/logo.png" alt="Logo" style="height: 80px; margin-right: 10px;">
+                                      <h6 class="text-uppercase fw-bold mb-0">ANIMALES POLINIZADORES</h6>
+                                    </div> 
+                                  </div>
+
+	        					<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+							          <h6 class="text-uppercase fw-bold mb-4">
+							           
+							          </h6>
+							          <p>
+							            <a href="#!" class="text-reset">Avisos de Privacidad</a>
+							          </p>
+							         
+							          <p>
+							            <a href="#!" class="text-reset">Politicas de Privacidad</a>
+							          </p>
+	        					</div>
+
+						        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+						          <!-- Links -->
+						          <h6 class="text-uppercase fw-bold mb-4">
+						         
+						          </h6>
+						          <p>
+						            <a href="#!" class="text-reset">Contactanos</a>
+						          </p>
+						          <p>
+						            <a href="#!" class="text-reset">Configuraciones de Cookies</a>
+						          </p>
+						          
+						        </div>
+
+						        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+						          <!-- Links -->
+						          <h6 class="text-uppercase fw-bold mb-4"></h6>
+						          <p><i class="fas fa-home me-3"></i>Puebla</p>
+						          <p>
+						            <i class="fas fa-envelope me-3"></i>
+						            animalespolinizadores@gmail.com
+						          </p>
+						        </div>
+      						</div>
+ 
+    					</div>
+  					</section>
+ 
+	  					<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+						    © 2025 Copyright:
+						    <a class="text-reset fw-bold" href="#">AnimalesPolinizadores.com</a>
+	  					</div>
+				</footer>
+ 			</div>
+		</div>
+	</div>	
+
+		<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+ 
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="js/scrip.js"></script>
+</body>
+</html>

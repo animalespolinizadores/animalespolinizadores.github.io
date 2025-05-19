@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Animales Polinizadores</title>
+	<link rel="stylesheet" type="text/css" href="css/estilosindex.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />  
+    
+        <style>
+            body {font-family: Arial, Helvetica, sans-serif;}
+
+            .tab {
+              overflow: hidden;
+              border: 1px solid #D2D9A0;
+              background-color: #F28C0F;
+            }
+
+            .tab button {
+              background-color: inherit;
+              float: left;
+              border: none;
+              outline: none;
+              cursor: pointer;
+              padding: 14px 16px;
+              transition: 0.3s;
+              font-size: 17px;
+            }
+
+            .tab button:hover {
+              background-color: #F2A30F;
+            }
+
+            .tab button.active {
+              background-color: #F2A30F;
+            }
+
+            .tabcontent {
+              display: none;
+              padding: 6px 12px;
+              border: 1px solid #D2D9A0;
+              border-top: none;
+            }
+            
+            .fondo {
+                      background-image: url('imagenes/fondos.jpeg');
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: center;
+                    }
+   
+                
+        </style>
+    
+    
+        
+    
+</head>
+<body class="fondo">
+	<div class="cabeza">
+		<div class="container">
+			<div class="d-flex justify-content-between py-2 align-items-center">
+				
+                 <div class="d-flex align-items-center">
+                  <a href="/">
+                    <img src="imagenes/logo.png" alt="Mi Logo" style="height: 80px;"> 
+                  </a>
+                  <p class="ms-3 mb-0"></p>
+                </div>
+
+				<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+					 <div class="container-fluid">
+                         
+					    <button
+					      data-mdb-collapse-init
+					      class="navbar-toggler"
+					      type="button"
+					      data-mdb-target="#navbarRightAlignExample"
+					      aria-controls="navbarRightAlignExample"
+					      aria-expanded="false"
+					      aria-label="Toggle navigation">
+					      <i class="fas fa-bars"></i>
+					    </button>
+                         
+					   <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+					        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						        <li class="nav-item">
+						          <a class="nav-link" aria-current="page" href="Index.html">Home</a>
+						        </li>
+						        <li class="nav-item">
+						         <a class="nav-link" href="quees.html">¿Qué es?</a>
+						        </li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Animales Polinizadores
+									</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+										<a class="dropdown-item" href="abejas.html">Abejas</a>
+										<a class="dropdown-item" href="avispas.html">Avipas</a>
+                                        <a class="dropdown-item" href="moscas.html">Moscas</a>
+                                        <a class="dropdown-item" href="hormigas.html">Hormigas</a>
+                                        <a class="dropdown-item" href="Escarabajos.html">Escarabajos</a>
+                                        <a class="dropdown-item" href="mariposas.html">Mariposas</a>
+                                        <a class="dropdown-item" href="colibries.html">Colobríes</a>
+                                        <a class="dropdown-item" href="murcielagos.html">Murciélagos</a>
+									</div>
+                                    </li>
+                                    <li class="nav-item">
+						          <a class="nav-link" href="beneficios.html">Beneficios</a>
+						        </li>
+								  
+						        <li class="nav-item">
+						          <a class="nav-link" href="juegos.html">Juegos</a> 
+						        </li>
+					      	</ul>
+					    </div>
+					 </div>
+				</nav>
+ 			</div>
+		</div>
+	</div>
+    
+    <div class="cabeza-cuerpo">
+		<div class="container">
+			<div class="row">
+            	<div class="col">
+      				<img id="img_gif" class="animate__animated animate__fadeInUp img-center pt-5" src="imagenes/abejas.gif" alt="novedades" width="320px">
+    			</div>
+    			<div class="col">
+      				<div>
+                        
+						<div class="text-center pt-5"><p><h2 class="animate__animated animate__rubberBand">¿Qué es?</h2><p/></div>
+                        
+					<p>Los animales polinizadores son aquellos que transportan polen de una flor a otra, facilitando la reproducción de las plantas y la producción de frutos y semillas. Son esenciales para la biodiversidad y la seguridad alimentaria, ya que muchos cultivos dependen de ellos para su producción.</p>
+					<center>
+						<a class="animate__animated animate__bounceIn boton" href="quees.html">Leer más..</a>
+					</center>
+					</div>
+    			</div>
+  			</div>
+		</div>
+        
+        <div class="container">
+            <div class="row"> 
+                <div class="col text-center pt-5">
+                    
+                    <h2 class="animate__animated animate__rubberBand">Amenazas y desafios</h2>
+                        <p>Click en la opción que deseas leer</p>
+
+
+                        <div class="tab">
+                          <button class="tablinks" onclick="openCity(event, 'Polinizadores')">Polinizadores</button>
+                          <button class="tablinks" onclick="openCity(event, 'Abejas')">Abejas</button>
+                          <button class="tablinks" onclick="openCity(event, 'Escarabajos')">Escarabajos</button>
+                          <button class="tablinks" onclick="openCity(event, 'Mariposas')">Mariposas</button>
+                          <button class="tablinks" onclick="openCity(event, 'Colibríes')">Colibríes</button>
+                          <button class="tablinks" onclick="openCity(event, 'Murcielagos')">Murciélagos</button>
+                        </div>
+
+                        <div id="Polinizadores" class="tabcontent">
+                          <h3>Polinizadores</h3>
+                          <p>Los polinizadores son de gran importancia para poder mantener el equilibrio ecológico y para la preservación de tradiciones y cultura de los pueblos. Sin embargo, en la actualidad ha disminuido su población de forma rápida, lo que ha generado preocupación respecto a su conservación. De acuerdo con la Lista Roja de la Unión Internacional para la Conservación de la Naturaleza (UICN), se estima que el 16.5% de los polinizadores vertebrados se encuentran en peligro de extinción a nivel mundial, en cuanto a los polinizadores invertebrados más del 40% de especies están amenazadas, misma que puede ir en aumento si no se atienden los factores que las han impactado.
+
+                            Dentro de los factores que se estima afectan a las poblaciones de polinizadores silvestres son: el cambio de uso de suelo, contaminación (en especial por el uso de plaguicidas), uso de organismos genéticamente modificados (OGM), e introducción de especies exóticas invasoras. En los siguientes párrafos se retomará una variedad de impactos enfocados en algunos de los principales polinizadores del país.</p>
+                        </div>
+
+                        <div id="Abejas" class="tabcontent">
+                          <h3>Avispas, abejas, abejorros y hormigas</h3>
+                          <p>Los principales factores que afectan a los himenópteros  son: las modificaciones en los patrones fenológicos de las plantas que limitan el alimento; el uso de plaguicidas que se ha observado pueden afectar a especies de Apis , Scaptotrigona, Plebeia, Mellipona, Trigona, las cuales presentan susceptibilidad a estos compuestos, así como efectos relacionados con cambios en el comportamiento de forrajeo y en la microbiota intestinal, al alimentarse con polen contaminado; asimismo se ven afectados por el aumento de patógenos y parásitos, entre otros factores ya mencionados</p> 
+                        </div>
+
+                        <div id="Escarabajos" class="tabcontent">
+                          <h3>Escarabajos</h3>
+                          <p>Los escarabajos son importantes polinizadores de plantas en México (subfamilias Dynastinae, Rutelinae, Cetoniinae) (Moore y Jameson, 2013). Un ejemplo de este proceso lo llevan a cabo las especies del género Cyclocephala, donde los adultos se sienten atraídos a las estructuras florales de plantas de las anonas (Annonaceae), de las cuales obtienen alimento, refugio y sitios de apareamiento (López y Deloya, 2019). De la misma forma que los anteriores polinizadores, su supervivencia se ve afectada por la pérdida de hábitat y en especial por el uso de plaguicidas. En Canadá (Ontario y Quebec) se ha logrado observar una disminución en la diversidad de escarabajos, en sitios agrícolas donde se produce maíz y se utilizan herbicidas, asimismo este estudio señala que los insectos contaminados por herbicidas pueden moverse a otros sitios dispersando la contaminación en las cadenas tróficas. </p>
+                        </div>
+                        
+                        <div id="Mariposas" class="tabcontent">
+                          <h3>Mariposas</h3>
+                          <p>Uno de los factores que incide en la pérdida de mariposas (además de los ya mencionados) es el cambio climático que produce alteraciones en la temperatura, precipitación y humedad relativa, que podrían llevar a la muerte a estas especies o a la pérdida de la diversidad de plantas.</p>
+                        </div>
+                    
+                        <div id="Colibríes" class="tabcontent">
+                          <h3>Colibríes</h3>
+                          <p>En cuanto a los colibríes en México, aproximadamente 20 especies se encuentran en categorías de riesgo, de acuerdo con lo señalado en la NOM-059-SEMARNAT-2010, Protección ambiental-especies nativas de México de flora y fauna silvestres-categorías de riesgo y especificaciones para su inclusión, exclusión o cambio-lista de especies en riesgo.</p>
+
+                          <p>Algunos de los factores que afectan a estas aves son: pérdida de hábitat, escasez de alimento, caza y tráfico ilegal. En este sentido, el Servicio de Pesca y Vida Silvestre de EUA identificó, del año 2013 al 2021, 905 cadáveres de colibríes de 22 especies diferentes, la mayoría provenientes de México (4 de ellas endémicas del país), utilizadas con fines ceremoniales o amuletos de amor, lo que evidencia la caza ilegal de estos organismos en el país.</p>
+                        </div>
+                    
+                        <div id="Murcielagos" class="tabcontent">
+                          <h3>Murciélagos</h3>
+                          <p>Estos organismos se ven afectados por la pérdida de hábitat, la fragmentación, la modificación de ecosistemas naturales, así como otros procesos (contaminación urbana o agrícola derivada del uso de plaguicidas, urbanización y aumento de la frontera agrícola), que han llevado a la reducción de elementos presentes en el paisaje, que permitían a estos organismos la correcta orientación y navegación nocturna. Además, ha aumentado la destrucción o perturbación de refugios como cuevas, grietas, huecos, troncos, raíces de árboles, follajes, termiteros, sitios arqueológicos, minas y diques, por la modificación en construcciones o paisajes. Estas afectaciones pueden ocurrir de forma directa para perjudicar a las poblaciones de estos organismos (derivado de la presencia de enfermedades o zoonosis emergentes o re-emergentes que generan miedo a estos organismos) o de forma indirecta por el turismo o prácticas militares. Asimismo, algunas de las nuevas amenazas se derivan del uso de energía eólica, la presencia de nuevos depredadores (gatos domésticos), entre otros.</p>
+                        </div>
+
+                        <script>
+                        function openCity(evt, cityName) {
+                          var i, tabcontent, tablinks;
+                          tabcontent = document.getElementsByClassName("tabcontent");
+                          for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                          }
+                          tablinks = document.getElementsByClassName("tablinks");
+                          for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                          }
+                          document.getElementById(cityName).style.display = "block";
+                          evt.currentTarget.className += " active";
+                        }
+                        </script>
+                    
+                </div>
+            
+            </div>
+        
+        </div>
+            
+        <div class="container">
+            <div class="row"> 
+                <div class="col text-center pt-5">
+
+                       <section>
+        
+                            <h2 class="animate__animated animate__rubberBand">Tabla de recompensas proporcionadas por las plantas a los polinizadores</h2>
+
+                            <p>Los jardines de polinizadores son espacios naturales que ayudan a la supervivencia tanto de plantas como de animales, creando un hábitat seguro para las mariposas, colibríes, abejas entre otros organismos. Recordemos que los polinizadores son especies que se alimentan de los recursos que ofrecen las flores como son néctar, polen, partes florales, resinas, ceras, entre otros recursos y al hacerlo ayudan accidentalmente a transportar el polen de una flor a otra generando la polinización</p>
+
+                            <table id="tabla_1">
+                                <thead>
+                                    <tr>
+                                        <th>Tipo de recompensa</th>
+                                        <th>Función para el polinizador</th>
+                                        <th>Ejemplos</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+
+                                        <td>Néctar</td>
+                                        <td>Alimento rico en carbohidratos</td>
+                                        <td>Que sirve como recompensa a abejas, mariposas, polillas, etc.</td>
+
+                                    </tr>
+
+                                     <tr>
+                                        <td>Polen</td>
+                                        <td>Alimento rico en proteínas</td>
+                                        <td>Comúnmente recogido por las abejas para alimentar a sus larvas, pero también consumido por moscas, polillas y mariposas.</td>
+
+                                    </tr>
+
+                                     <tr>
+                                        <td>Tejidos florales</td>
+                                        <td>Alimento</td>
+                                        <td>Algunas flores polinizadas por escarabajos ofrecen a sus polinizadores tejidos florales nutritivos. La recompensa son semillas en desarrollo que sirven de alimento larvario. Como ejemplos figuran las avispas polinizadoras de los higos (género Ficus, familia Moraceae) y las polillas que polinizan el género Yucca (familia Asparagaceae )</td>
+
+                                    </tr>
+
+                                     <tr>
+                                        <td>Aceites</td>
+                                        <td>Alimento e impermeabilización de nidos</td>
+                                        <td>Especies de plantas, principalmente tropicales, polinizadas por abejas.
+
+                                     </td>
+
+                                    </tr>
+
+                                     <tr>
+                                        <td>Olor</td>
+                                        <td>Utilizado por abejas macho para atraer a las hembras</td>
+                                        <td>Las abejas euglosinas utilizan los compuestos volátiles colectados a partir de diferentes fuentes ambientales, entre ellas las orquídeas, como los géneros pertenecientes a la subtribu Catasetinae y géneros de las tribus Stanhopeinae y Coeliopsidinae, que utilizan  para la atracción de las hembras. Cabe notar que las abejas euglosinas también se encuentran en México (Grajales-Conesa et al., 2011; Gerlach, 2009; Tamayo, 2017).</td>
+
+                                    </tr>
+
+                                     <tr>
+                                        <td>Resina</td>
+                                        <td>Utilizada en la construcción del nido</td>
+                                        <td>Diversos géneros tropicales polinizados por abejas como el género Dalechampia parientes de la nochebuena.</td>
+
+                                    </tr>   
+
+                                </tbody>
+                                <tfoot></tfoot>
+
+                            </table>
+                        </section>
+                    
+                </div>
+            
+            </div>
+        
+        </div>
+
+		<section id="galeria" class="container">
+
+			<div class="text-center pt-5">
+				<h1 class="animate__animated animate__rubberBand" >Puede interesarte</h1>
+			    <p>Animales Polinizadores</p>
+			</div>
+
+
+			<div class="row">
+			  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+			    <img
+			      src="imagenes/abejas.jpg"
+			      class="w-100 shadow-1-strong rounded mb-4" 
+			      alt="Boat on Calm Water"
+			    />
+
+			    <img
+			      src="imagenes/hormigas.jpg"
+			      class="w-100 shadow-1-strong rounded mb-4"
+			      alt="Wintry Mountain Landscape"
+			    />
+			  </div>
+
+			  <div class="col-lg-4 mb-4 mb-lg-0">
+			    <img
+			      src="imagenes/mariposas.jpeg"
+			      class="w-100 shadow-1-strong rounded mb-4"
+			      alt="Mountains in the Clouds"
+			    />
+
+			    <img
+			      src="imagenes/Murcielago.jpeg"
+			      class="w-100 shadow-1-strong rounded mb-4"
+			      alt="Boat on Calm Water"
+			    />
+			  </div>
+
+			  <div class="col-lg-4 mb-4 mb-lg-0">
+			    <img
+			      src="imagenes/Colibries.jpg"
+			      class="w-100 shadow-1-strong rounded mb-4"
+			      alt="Waves at Sea"
+			    />
+
+			    <img
+			      src="imagenes/escarabajo.webp"
+			      class="w-100 shadow-1-strong rounded mb-4"
+			      alt="Yosemite National Park"
+			    />
+			  </div>
+			</div>
+		</section>		
+	</div>
+	
+	<div class="cabeza">
+		<div class="container">
+			<div class="d-flex justify-content-between">
+ 				<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+  
+  					<section class="">
+    					<div class="container text-center text-md-start mt-5">
+      						<div class="row mt-3">
+                                
+	        					<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                      <img src="imagenes/logo.png" alt="Logo" style="height: 80px; margin-right: 10px;">
+                                      <h6 class="text-uppercase fw-bold mb-0">ANIMALES POLINIZADORES</h6>
+                                    </div> 
+                                  </div>
+
+	        					<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+							          <h6 class="text-uppercase fw-bold mb-4">
+							           
+							          </h6>
+							          <p>
+							            <a href="#!" class="text-reset">Avisos de Privacidad</a>
+							          </p>
+							         
+							          <p>
+							            <a href="#!" class="text-reset">Politicas de Privacidad</a>
+							          </p>
+	        					</div>
+
+						        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+						          <!-- Links -->
+						          <h6 class="text-uppercase fw-bold mb-4">
+						         
+						          </h6>
+						          <p>
+						            <a href="#!" class="text-reset">Contactanos</a>
+						          </p>
+						          <p>
+						            <a href="#!" class="text-reset">Configuraciones de Cookies</a>
+						          </p>
+						          
+						        </div>
+
+						        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+						          
+						          <h6 class="text-uppercase fw-bold mb-4"></h6>
+						          <p><i class="fas fa-home me-3"></i>Puebla</p>
+						          <p>
+						            <i class="fas fa-envelope me-3"></i>
+						            animalespolinizadores@gmail.com
+						          </p>
+						        </div>
+      						</div>
+ 
+    					</div>
+  					</section>
+ 
+	  					<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+						    © 2025 Copyright:
+						    <a class="text-reset fw-bold" href="#">AnimalesPolinizadores.com</a>
+	  					</div>
+				</footer>
+ 			</div>
+		</div>
+	</div>	
+
+			<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+ 
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="js/scrip.js"></script>
+</body>
+</html>
